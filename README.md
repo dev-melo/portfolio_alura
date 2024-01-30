@@ -1,3 +1,5 @@
-# Sobre o projeto
+# Portfólio
 
-Projeto que foi desenvolvido durante um curso focado em desenvolvimento Front-End na Alura. 
+## Sobre o projeto
+
+Projeto de um simples portfolio minimalista desenvolvido ao decorrer do curso de formação Front-End da Alura.

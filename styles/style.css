@@ -39,7 +39,7 @@ body {
 }
 .container-header-nav-link{
     font-family: var(--secondary-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--other-color);
     text-decoration: none;
@@ -56,18 +56,19 @@ body {
     align-items: center;
     /* Separar elementos em um pequeno espaçamento*/
     justify-content: space-between;
+    gap: 82px;
 }
 
 .container-main-content{
     /* Alterando a largura baseado no tamanho fornecido no Figma */
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .container-main-content-title{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--primary-font);
 }
 .titulo-destaque{
@@ -75,7 +76,7 @@ body {
 }
 
 .container-main-content-text{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--secondary-font);
     font-weight: 400;
 }
@@ -91,7 +92,7 @@ body {
 .container-main-content-button-title{
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .container-main-content-button-link{
@@ -105,10 +106,10 @@ body {
     gap: 16px;
 
     border: 2px solid #22d4fd;
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     color: var(--secondary-color);
@@ -120,12 +121,37 @@ body {
     background-color: var(--hover-color);
 }
 
+.container-main-image{
+    width: 50%;
+}
+
 .container-footer{
     padding: 24px;
     color: var(--main-color);
     background-color: var(--other-color);
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+/* Checa o tamanho da página. Se fica abaixo ou igual ao que foi colocado, vai aplicar os estilos abaixo. */
+@media(max-width: 1200px){
+
+    .container-header{
+        padding: 10%;
+    }
+
+    .container-header-nav{
+        justify-content: center;
+    }
+
+    .container-main{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container-main-content{
+        width: auto;
+    }
 }
