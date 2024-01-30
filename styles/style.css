@@ -1,6 +1,15 @@
 /* Importação de fonte via Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --main-color: #000000;
+    --secondary-color: #F6F6F6;
+    --other-color: #22D4FD;
+    --hover-color: #272727;
+
+    --primary-font:'Krona One', sans-serif;
+    --secondary-font:"Montserrat", sans-serif;
+}
 
 /* Exemplo de Reset de CSS */
 *{
@@ -15,8 +24,8 @@ body {
     /* Propriedade responsavel por manter o conteúdo dentro do Body */
     box-sizing: border-box;
 
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 .container-header{
@@ -29,10 +38,10 @@ body {
     gap: 80px;
 }
 .container-header-nav-link{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 600;
-    color: #22d4fd;
+    color: var(--other-color);
     text-decoration: none;
 }
 
@@ -59,15 +68,15 @@ body {
 
 .container-main-content-title{
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--primary-font);
 }
 .titulo-destaque{
-    color: #22d4fd;
+    color: var(--other-color);
 }
 
 .container-main-content-text{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 400;
 }
 .container-main-content-button{
@@ -80,7 +89,7 @@ body {
 
 
 .container-main-content-button-title{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 24px;
 }
@@ -102,21 +111,21 @@ body {
     font-size: 24px;
     border-radius: 8px;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
     font-weight: 600;
 }
 
 .container-main-content-button-link:hover{
-    background-color: #272727;
+    background-color: var(--hover-color);
 }
 
 .container-footer{
     padding: 24px;
-    color: #000000;
-    background-color: #22d4fd;
+    color: var(--main-color);
+    background-color: var(--other-color);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 400;
 }
