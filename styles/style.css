@@ -11,7 +11,7 @@
 body {
     
     /* Fazer com que a página ocupe a página toda */
-    height: 100vh;
+    /* height: 100vh; */
     /* Propriedade responsavel por manter o conteúdo dentro do Body */
     box-sizing: border-box;
 
@@ -19,13 +19,27 @@ body {
     color: #F6F6F6;
 }
 
-.titulo-destaque{
-    color: #22d4fd;
+.container-header{
+    /* Top, Right, Bottom e Left */
+    padding: 2% 0% 0% 15%;
 }
+
+.container-header-nav{
+    display: flex;
+    gap: 80px;
+}
+.container-header-nav-link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22d4fd;
+    text-decoration: none;
+}
+
 
 .container-main{
 
-    margin: 10% 15%;
+    padding: 5% 15%;
 
     /* Aplicação de flexbox e containers*/
     display: flex;
@@ -46,6 +60,9 @@ body {
 .container-main-content-title{
     font-size: 36px;
     font-family: 'Krona One', sans-serif;
+}
+.titulo-destaque{
+    color: #22d4fd;
 }
 
 .container-main-content-text{
@@ -70,6 +87,14 @@ body {
 
 .container-main-content-button-link{
     /* background-color: #22d4fd; */
+    
+    /* Iniciar flexbox */
+    display: flex;
+    /* Colocar itens no centro */
+    justify-content: center;
+    /* Espaçamento entre itens */
+    gap: 16px;
+
     border: 2px solid #22d4fd;
     width: 378px;
     padding: 21.5px 0px;
@@ -80,4 +105,18 @@ body {
     color: #f6f6f6;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.container-main-content-button-link:hover{
+    background-color: #272727;
+}
+
+.container-footer{
+    padding: 24px;
+    color: #000000;
+    background-color: #22d4fd;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
